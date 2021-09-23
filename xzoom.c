@@ -744,6 +744,7 @@ main(int argc, char **argv) {
 					set_title = True;
 					break;
 
+				case XK_h:
 				case XK_Left:
 				case XK_KP_Left:
 					if(flipxy)
@@ -758,6 +759,7 @@ main(int argc, char **argv) {
 							xgrab -= scroll;
 					break;
 
+				case XK_l:
 				case XK_Right:
 				case XK_KP_Right:
 					if(flipxy)
@@ -772,6 +774,7 @@ main(int argc, char **argv) {
 							xgrab += scroll;
 					break;
 
+				case XK_k:
 				case XK_Up:
 				case XK_KP_Up:
 					if(flipxy)
@@ -786,6 +789,7 @@ main(int argc, char **argv) {
 							ygrab -= scroll;
 					break;
 
+				case XK_j:
 				case XK_Down:
 				case XK_KP_Down:
 					if(flipxy)
@@ -825,7 +829,7 @@ main(int argc, char **argv) {
 					yzoom_flag = False;
 					break;
 
-				case 'h':
+				case 'f':
 					yzoom_flag = True;
 					xzoom_flag = False;
 					break;
